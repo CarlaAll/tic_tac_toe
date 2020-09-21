@@ -1,11 +1,35 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
+  background: radial-gradient(circle at 25px 9px, black 2px, transparent 2px),
+    radial-gradient(circle at 49px 28px, black 2px, transparent 2px),
+    radial-gradient(circle at 38px 1px, black 2px, transparent 2px),
+    radial-gradient(circle at 20px 4px, black 2px, transparent 2px),
+    radial-gradient(circle at 80px 4px, black 2px, transparent 2px),
+    radial-gradient(circle at 50px 10px, black 2px, transparent 2px),
+    radial-gradient(circle at 60px 16px, black 2px, transparent 2px),
+    radial-gradient(circle at 70px 16px, black 2px, transparent 2px),
+    radial-gradient(
+        ellipse at 50px 0,
+        red 33px,
+        lime 33px,
+        lime 38px,
+        transparent 38px
+      )
+      white;
+  background-size: 100px 50px;
 }
 
-ol,
-ul {
+ol {
   padding-left: 30px;
+}
+
+.btn-move {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: lime;
+  border: 2px solid lime;
+  margin-bottom: 5px;
 }
 
 .board-row:after {
@@ -42,10 +66,26 @@ ul {
 }
 
 .game {
-  display: flex;
-  flex-direction: row;
+  background: white;
+  margin: 50px 42%;
+  max-width: 200px;
 }
 
-.game-info {
-  margin-left: 20px;
+.game-board {
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.winner {
+  font-family: monospace;
+  font-weight: bolder;
+  text-align: center;
+}
+
+footer {
+  font-family: monospace;
+  text-align: center;
+  background: red;
+  color: white;
 }
